@@ -1,4 +1,4 @@
-## 0.0.6 - First Release
+## 0.0.7 - First Release
 * Fixes to syntax highlighting (doctype)
 * Attempted language-pug.cson cleanup/fix
 

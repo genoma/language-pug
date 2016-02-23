@@ -7,7 +7,7 @@ patterns: [
   {
     comment: "Doctype declaration."
     match: "^(!!!|doctype)(\\s*[a-zA-Z0-9-_]+)?"
-    name: "meta.tag.sgml.doctype.html"
+    name: "comment.other.doctype.jade"
   }
   {
     begin: "^(\\s*)//-"
@@ -49,7 +49,7 @@ patterns: [
         name: "entity.name.tag.script.pug"
     comment: "Script tag with JavaScript code."
     end: "^(?!(\\1\\s)|\\s*$)"
-    name: "meta.tag.other"
+    name: "source.script.jade"
     patterns: [
       {
         begin: "\\G(?=\\()"
@@ -83,7 +83,7 @@ patterns: [
         name: "entity.name.tag.script.pug"
     comment: "Style tag with CSS code."
     end: "^(?!(\\1\\s)|\\s*$)"
-    name: "meta.tag.other"
+    name: "source.script.jade"
     patterns: [
       {
         begin: "\\G(?=\\()"
@@ -230,7 +230,7 @@ patterns: [
       "3":
         name: "constant.language.js"
       "4":
-        name: "meta.tag.other entity.name.tag.pug"
+        name: "source.script.jade entity.name.tag.pug"
     comment: "Generated from dot_block_tag.py"
     end: "^(?!(\\1\\s)|\\s*$)"
     patterns: [
@@ -691,7 +691,7 @@ repository:
       "1":
         name: "storage.type.function.pug"
       "2":
-        name: "meta.tag.other entity.name.function.pug"
+        name: "source.script.jade entity.name.function.pug"
     end: "(?!\\()|$"
     patterns: [
       {
@@ -708,7 +708,7 @@ repository:
           {
             captures:
               "1":
-                name: "meta.tag.other entity.other.attribute-name.tag.pug"
+                name: "source.script.jade entity.other.attribute-name.tag.pug"
             match: "([^\\s(),=/]+)\\s*=\\s*"
           }
           {
@@ -725,7 +725,7 @@ repository:
       "1":
         name: "storage.type.function.pug"
       "2":
-        name: "meta.tag.other entity.name.function.pug"
+        name: "source.script.jade entity.name.function.pug"
       "3":
         name: "punctuation.definition.parameters.begin.js"
       "4":
@@ -787,7 +787,7 @@ repository:
       "1":
         name: "constant.name.attribute.tag.pug"
     end: "(\\))"
-    name: "meta.tag.other"
+    name: "source.script.jade"
     patterns: [
       {
         include: "#tag_attribute_name_paren"
@@ -859,7 +859,7 @@ repository:
       "1":
         name: "entity.name.function.pug"
     end: "(\\))"
-    name: "meta.tag.other"
+    name: "source.script.jade"
     patterns: [
       {
         match: "attributes(?=\\))"
@@ -872,12 +872,12 @@ repository:
   tag_name:
     begin: "([#!]\\{(?=.*?\\}))|(\\w(([\\w:-]+[\\w-])|([\\w-]*)))"
     end: "(\\G(?<!\\5[^\\w-]))|\\}|$"
-    name: "meta.tag.other entity.name.tag.pug"
+    name: "source.script.jade entity.name.tag.pug"
     patterns: [
       {
         begin: "\\G(?<=\\{)"
         end: "(?=\\})"
-        name: "meta.tag.other entity.name.tag.pug"
+        name: "source.script.jade entity.name.tag.pug"
         patterns: [
           {
             match: "{"

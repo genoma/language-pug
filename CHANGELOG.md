@@ -1,3 +1,5 @@
+## 0.0.10 - Added minimal .gitignore
+
 ## 0.0.9 - Fixed changelog
 
 ## 0.0.8 - Multiple fixes

@@ -22,6 +22,17 @@ Any help in fixing this one is more than welcome!
 
 `$ apm install language-pug`
 
+
+### Configure
+
+In your `config.cson` write:
+
+```
+".pug.text":
+  whitespace:
+    removeTrailingWhitespace: false
+```
+
 ### License
 
 This package is published under MIT license

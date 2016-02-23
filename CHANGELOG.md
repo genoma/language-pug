@@ -1,2 +1,2 @@
-## 0.0.1 - First Release
+## 0.0.3 - First Release
 * First beta release

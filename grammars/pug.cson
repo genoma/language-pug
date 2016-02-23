@@ -230,7 +230,7 @@ patterns: [
       "3":
         name: "constant.language.js"
       "4":
-        name: "source.script.jade entity.name.tag.pug"
+        name: "source.script.pug entity.name.tag.pug"
     comment: "Generated from dot_block_tag.py"
     end: "^(?!(\\1\\s)|\\s*$)"
     patterns: [

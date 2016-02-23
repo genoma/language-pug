@@ -1,3 +1,7 @@
+## 0.0.12 - Attempt to fix comment erratic behaviour
+Changed slightly syntax comment detection organization, which almost works but there are still some quirks that are connected to the fact the line above the comment has or doesn't have leading spaces.
+
+
 ## 0.0.11 - Small fix to pug.cson
 
 ## 0.0.10 - Added minimal .gitignore

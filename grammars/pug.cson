@@ -10,28 +10,6 @@ patterns: [
     name: "comment.other.doctype.jade"
   }
   {
-    begin: "^(\\s*)//-"
-    comment: "Unbuffered (pug-only) comments."
-    end: "^(?!(\\1\\s)|\\s*$)"
-    name: "comment.unbuffered.block.pug"
-  }
-  {
-    begin: "^(\\s*)//"
-    comment: "Buffered (html) comments."
-    end: "^(?!(\\1\\s)|\\s*$)"
-    name: "string.comment.buffered.block.pug"
-    patterns: [
-      {
-        captures:
-          "1":
-            name: "invalid.illegal.comment.comment.block.pug"
-        comment: "Buffered comments inside buffered comments will generate invalid html."
-        match: "^\\s*(//)(?!-)"
-        name: "string.comment.buffered.block.pug"
-      }
-    ]
-  }
-  {
     begin: "^(\\s*)-$"
     comment: "Unbuffered code block."
     end: "^(?!(\\1\\s)|\\s*$)"
@@ -270,6 +248,12 @@ patterns: [
     end: "$"
     patterns: [
       {
+        include: "#unbuffered_comments"
+      }
+      {
+        include: "#buffered_comments"
+      }
+      {
         include: "#inline_pug"
       }
       {
@@ -360,6 +344,29 @@ patterns: [
   }
 ]
 repository:
+
+  unbuffered_comments:
+    begin: "^(\\s*)//-"
+    comment: "Unbuffered (pug-only) comments."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "comment.unbuffered.block.pug"
+
+  buffered_comments:
+    begin: "^(\\s*)//"
+    comment: "Buffered (html) comments."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "string.comment.buffered.block.pug"
+    patterns: [
+      {
+        captures:
+          "1":
+            name: "invalid.illegal.comment.comment.block.pug"
+        comment: "Buffered comments inside buffered comments will generate invalid html."
+        match: "^\\s*(//)(?!-)"
+        name: "string.comment.buffered.block.pug"
+      }
+    ]
+
   blocks_and_includes:
     captures:
       "1":

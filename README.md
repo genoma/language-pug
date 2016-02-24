@@ -12,11 +12,11 @@ Any improvement, suggestion, bugfix is really appreciated.
 
 ### Bugs
 
-One pesky bug is the one involving comments that are not rendered properly:
+One pesky bug is the one involving comments that are not rendered properly, **which has been fixed in v0.0.13 in an hugly way and needs to be refactored**
 
 [FirstMate issue 38](https://github.com/atom/first-mate/issues/38)
 
-Any help in fixing this one is more than welcome!
+Any help in fixing and improving this one is more than welcome!
 
 ### Install
 

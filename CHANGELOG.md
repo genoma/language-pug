@@ -1,6 +1,8 @@
+## 0.0.13 - Temporary fix to the comment behaviour
+This syntax need major refactoring for sure, but calling the comment regex detection in two places solve the syntax switch  on/off. Ugly but it works.
+
 ## 0.0.12 - Attempt to fix comment erratic behaviour
 Changed slightly syntax comment detection organization, which almost works but there are still some quirks that are connected to the fact the line above the comment has or doesn't have leading spaces.
-
 
 ## 0.0.11 - Small fix to pug.cson
 

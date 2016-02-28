@@ -1,3 +1,5 @@
+## 0.0.15 - Readme update
+
 ## 0.0.14 - Auto Complete fix
 Auto Complete wasn't working when using Symbol provider (wrong naming in language-pug.cson and pug.cson)
 

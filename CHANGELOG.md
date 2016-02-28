@@ -1,3 +1,6 @@
+## 0.0.14 - Auto Complete fix
+Auto Complete wasn't working when using Symbol provider (wrong naming in language-pug.cson and pug.cson)
+
 ## 0.0.13 - Temporary fix to the comment behaviour
 This syntax need major refactoring for sure, but calling the comment regex detection in two places solve the syntax switch  on/off. Ugly but it works.
 

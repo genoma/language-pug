@@ -938,4 +938,4 @@ repository:
         include: "source.js"
       }
     ]
-scopeName: "text.pug"
+scopeName: "source.pug"

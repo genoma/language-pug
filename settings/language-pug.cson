@@ -1,7 +1,7 @@
-".text.pug":
+".source.pug":
   editor:
     commentStart: "//- "
-".text.pug":
+".source.pug":
   editor:
     increaseIndentPattern: '''
       (?x)

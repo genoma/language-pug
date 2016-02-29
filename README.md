@@ -32,7 +32,7 @@ Any help in giving this fix a less ugly face will be greatly appreciated.
 In your `config.cson` write:
 
 ```
-".pug.text":
+".source.pug":
   whitespace:
     removeTrailingWhitespace: false
 ```

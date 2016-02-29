@@ -1,3 +1,5 @@
+## 0.0.16 - Readme fix
+
 ## 0.0.15 - Readme update
 
 ## 0.0.14 - Auto Complete fix

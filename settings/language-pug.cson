@@ -1,8 +1,5 @@
 ".source.pug":
   editor:
-    commentStart: "//- "
-".source.pug":
-  editor:
     increaseIndentPattern: '''
       (?x)
             ^\\s*(  # start with any whitespace
@@ -17,3 +14,4 @@
             )
     '''
     decreaseIndentPattern: "^\\s*(- )?(else)\\b.*$"
+    commentStart: "//- "

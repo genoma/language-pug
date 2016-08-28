@@ -865,7 +865,7 @@ repository:
     name: "constant.language.js"
   tag_id:
     match: "#[\\w-]+"
-    name: "constant.id.tag.pug"
+    name: "entity.other.attribute-name.id.pug"
   tag_mixin_attributes:
     begin: "(&attributes\\()"
     captures:

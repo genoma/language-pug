@@ -36,6 +36,38 @@ patterns: [
     name: "source.script.jade"
     patterns: [
       {
+        begin: "^(\\s*):(babel)(?=\\(|$)$"
+        beginCaptures:
+          "2":
+            name: "constant.language.name.babel.filter.pug"
+        end: "^(?!(\\1\\s)|\\s*$)"
+        name: "source.babel.filter.pug"
+        patterns: [
+          {
+            include: "#filter_args"
+          }
+          {
+            include: "source.js.jsx"
+          }
+        ]
+      }
+      {
+        begin: "^(\\s*):(coffee(-?script)?)(?=\\(|$)"
+        beginCaptures:
+          "2":
+            name: "constant.language.name.coffeescript.filter.pug"
+        end: "^(?!(\\1\\s)|\\s*$)"
+        name: "source.coffeescript.filter.pug"
+        patterns: [
+          {
+            include: "#filter_args"
+          }
+          {
+            include: "source.coffee"
+          }
+        ]
+      }
+      {
         begin: "\\G(?=\\()"
         end: "$"
         name: "stuff.tag.script.pug"
@@ -122,6 +154,9 @@ patterns: [
         include: "#filter_args"
       }
       {
+        include: "source.css.sass"
+      }
+      {
         include: "source.sass"
       }
     ]
@@ -138,6 +173,9 @@ patterns: [
         include: "#filter_args"
       }
       {
+        include: "source.css.less"
+      }
+      {
         include: "source.less"
       }
     ]
@@ -148,28 +186,16 @@ patterns: [
       "2":
         name: "constant.language.name.stylus.filter.pug"
     end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.stylus.filter.pug"
     patterns: [
       {
         include: "#filter_args"
+      }
+      {
+        include: "source.css.stylus"
       }
       {
         include: "source.stylus"
-      }
-    ]
-  }
-  {
-    begin: "^(\\s*):(coffee(-?script)?)(?=\\(|$)"
-    beginCaptures:
-      "2":
-        name: "constant.language.name.coffeescript.filter.pug"
-    end: "^(?!(\\1\\s)|\\s*$)"
-    name: "source.coffeescript.filter.pug"
-    patterns: [
-      {
-        include: "#filter_args"
-      }
-      {
-        include: "source.coffee"
       }
     ]
   }

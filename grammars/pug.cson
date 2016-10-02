@@ -27,7 +27,7 @@ patterns: [
     ]
   }
   {
-    begin: "^(\\s*)(script)(?=[.#(\\s])((?![^\\n]*type=)|(?=[^\\n]*(text|application)/javascript))"
+    begin: "^(\\s*)(script)(?=[.#(\\s])((?![^\\n]*type=)|(?=[^\\n]*type=['\"](text|application)/javascript['\"]))"
     beginCaptures:
       "2":
         name: "entity.name.tag.script.pug"
@@ -93,7 +93,41 @@ patterns: [
     ]
   }
   {
-    begin: "^(\\s*)(style)((\\.$)|(?=[.#(].*\\.$))"
+    begin: "^(\\s*)(script)(?=[.#(\\s])(?=[^\\n]*type=['\"](?:(text|application)/)?(?:x-)?coffee(?:-script)?['\"])"
+    beginCaptures:
+      "2":
+        name: "entity.name.tag.script.pug"
+    comment: "Script tag with CoffeeScript code."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.script.jade"
+    patterns: [
+      {
+        begin: "\\G(?=\\()"
+        end: "$"
+        name: "stuff.tag.script.pug"
+        patterns: [
+          {
+            include: "#tag_attributes"
+          }
+        ]
+      }
+      {
+        begin: "\\G(?=[.#])"
+        end: "$"
+        name: "stuff.tag.script.pug"
+        patterns: [
+          {
+            include: "#complete_tag"
+          }
+        ]
+      }
+      {
+        include: "source.coffee"
+      }
+    ]
+  }
+  {
+    begin: "^(\\s*)(style)(?=[.#(\\s])((?![^\\n]*type=)|(?=[^\\n]*type=['\"](?:text/)?css['\"]))"
     beginCaptures:
       "2":
         name: "entity.name.tag.script.pug"
@@ -123,6 +157,154 @@ patterns: [
       }
       {
         include: "source.css"
+      }
+    ]
+  }
+  {
+    begin: "^(\\s*)(style)(?=[.#(\\s])(?=[^\\n]*type=['\"](?:text/)?(?:x-)?scss['\"])"
+    beginCaptures:
+      "2":
+        name: "entity.name.tag.script.pug"
+    comment: "Style tag with SCSS code."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.script.jade"
+    patterns: [
+      {
+        begin: "\\G(?=\\()"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#tag_attributes"
+          }
+        ]
+      }
+      {
+        begin: "\\G(?=[.#])"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#complete_tag"
+          }
+        ]
+      }
+      {
+        include: "source.css.scss"
+      }
+      {
+        include: "source.scss"
+      }
+    ]
+  }
+  {
+    begin: "^(\\s*)(style)(?=[.#(\\s])(?=[^\\n]*type=['\"](?:text/)?(?:x-)?sass['\"])"
+    beginCaptures:
+      "2":
+        name: "entity.name.tag.script.pug"
+    comment: "Style tag with SASS code."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.script.jade"
+    patterns: [
+      {
+        begin: "\\G(?=\\()"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#tag_attributes"
+          }
+        ]
+      }
+      {
+        begin: "\\G(?=[.#])"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#complete_tag"
+          }
+        ]
+      }
+      {
+        include: "source.css.sass"
+      }
+      {
+        include: "source.sass"
+      }
+    ]
+  }
+  {
+    begin: "^(\\s*)(style)(?=[.#(\\s])(?=[^\\n]*type=['\"](?:text/)?(?:x-)?less['\"])"
+    beginCaptures:
+      "2":
+        name: "entity.name.tag.script.pug"
+    comment: "Style tag with Less code."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.script.jade"
+    patterns: [
+      {
+        begin: "\\G(?=\\()"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#tag_attributes"
+          }
+        ]
+      }
+      {
+        begin: "\\G(?=[.#])"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#complete_tag"
+          }
+        ]
+      }
+      {
+        include: "source.css.less"
+      }
+      {
+        include: "source.less"
+      }
+    ]
+  }
+  {
+    begin: "^(\\s*)(style)(?=[.#(\\s])(?=[^\\n]*type=['\"](?:text/)?(?:x-)?stylus['\"])"
+    beginCaptures:
+      "2":
+        name: "entity.name.tag.script.pug"
+    comment: "Style tag with Stylus code."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.script.jade"
+    patterns: [
+      {
+        begin: "\\G(?=\\()"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#tag_attributes"
+          }
+        ]
+      }
+      {
+        begin: "\\G(?=[.#])"
+        end: "$"
+        name: "stuff.tag.style.pug"
+        patterns: [
+          {
+            include: "#complete_tag"
+          }
+        ]
+      }
+      {
+        include: "source.css.stylus"
+      }
+      {
+        include: "source.stylus"
       }
     ]
   }

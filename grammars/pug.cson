@@ -460,6 +460,9 @@ patterns: [
         include: "#buffered_comments"
       }
       {
+        include: "#unbuffered_code_block"
+      }
+      {
         include: "#inline_pug"
       }
       {
@@ -467,9 +470,6 @@ patterns: [
       }
       {
         include: "#unbuffered_code"
-      }
-      {
-        include: "#unbuffered_code_block"
       }
       {
         include: "#mixin_definition"

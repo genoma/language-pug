@@ -16,15 +16,7 @@ patterns: [
     name: "comment.other.doctype.jade"
   }
   {
-    begin: "^(\\s*)-$"
-    comment: "Unbuffered code block."
-    end: "^(?!(\\1\\s)|\\s*$)"
-    name: "source.js"
-    patterns: [
-      {
-        include: "source.js"
-      }
-    ]
+    include: "#unbuffered_code_block"
   }
   {
     begin: "^(\\s*)(script)(?=[.#(\\s])((?![^\\n]*type=)|(?=[^\\n]*type=['\"](text|application)/javascript['\"]))"
@@ -466,6 +458,9 @@ patterns: [
       }
       {
         include: "#buffered_comments"
+      }
+      {
+        include: "#unbuffered_code_block"
       }
       {
         include: "#inline_pug"
@@ -1142,6 +1137,16 @@ repository:
       {
         include: "#js_brackets"
       }
+      {
+        include: "source.js"
+      }
+    ]
+  unbuffered_code_block:
+    begin: "^(\\s*)-(\r|\n)"
+    comment: "Unbuffered code block."
+    end: "^(?!(\\1\\s)|\\s*$)"
+    name: "source.js"
+    patterns: [
       {
         include: "source.js"
       }

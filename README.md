@@ -1,7 +1,6 @@
 # language-pug package
 
-## As you've probably seen, due to time constraints I am not able to be as swift as I wanted in fixing problems with this package.
-## I will be more than happy to accept contributions and help in maintaining this repository.
+### As you've probably seen, due to time constraints I am not able to be as swift as I wanted in fixing problems with this package. I will be more than happy to accept contributions and help in maintaining this repository.
 
 A [Pug](https://github.com/pugjs) (was **Jade**) syntax highlighting for Atom, derived from [jade-tmbundle](https://github.com/davidrios/jade-tmbundle).
 

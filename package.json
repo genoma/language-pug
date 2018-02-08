@@ -1,6 +1,6 @@
 {
   "name": "language-pug",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Pug (was Jade) syntax highlighting",
   "keywords": [
     "Pug",

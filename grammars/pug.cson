@@ -1088,12 +1088,12 @@ repository:
   tag_name:
     begin: "([#!]\\{(?=.*?\\}))|(\\w(([\\w:-]+[\\w-])|([\\w-]*)))"
     end: "(\\G(?<!\\5[^\\w-]))|\\}|$"
-    name: "source.script.jade entity.name.tag.pug"
+    name: "entity.name.tag.pug"
     patterns: [
       {
         begin: "\\G(?<=\\{)"
         end: "(?=\\})"
-        name: "source.script.jade entity.name.tag.pug"
+        name: "entity.name.tag.pug"
         patterns: [
           {
             match: "{"

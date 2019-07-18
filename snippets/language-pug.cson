@@ -1,2 +1,670 @@
-".script.pug":
-  
+# This snippet file has been ported from language-html,
+# https://github.com/atom/language-html/blob/master/snippets/language-html.cson
+
+# Important: When adding a new snippet,
+# there is a second section halfway down this file
+# where you need to null-out the snippet to prevent it from
+# appearing in tags or embedded contexts
+".text.pug":
+  # A
+  "Anchor":
+    "prefix": "a"
+    "body":
+  "Abbreviation":
+    "prefix": "abbr"
+    "body":
+  "Address":
+    "prefix": "address"
+    "body": 
+  "Area":
+    "prefix": "area"
+    "body": ""
+  "Article":
+    "prefix": "article"
+    "body":
+  "Aside":
+    "prefix": "aside"
+    "body":
+  "Audio":
+    "prefix": "audio"
+    "body":
+  # B
+  "Body":
+    "prefix": "body"
+    "body":
+  "Bold":
+    "prefix": "b"
+    "body":
+  "Base":
+    "prefix": "base"
+    "body":
+  "Bi-Directional Isolation":
+    "prefix": "bdi"
+    "body":
+  "Bi-Directional Override":
+    "prefix": "bdo"
+    "body":
+  "Blockquote":
+    "prefix": "blockquote"
+    "body":
+  "Line Breaker":
+    "prefix": "br"
+    "body":
+  "Button":
+    "prefix": "button"
+    "body":
+  # C
+  "Canvas":
+    "prefix": "canvas"
+    "body":
+  "Caption":
+    "prefix": "caption"
+    "body":
+  "Citation":
+    "prefix": "cite"
+    "body":
+  "Code":
+    "prefix": "code"
+    "body":
+  "Column":
+    "prefix": "col"
+    "body":
+  "Column Group":
+    "prefix": "colgroup"
+    "body":
+  "Comment":
+    "prefix": "--"
+    "body":
+  # D
+  "HTML — 5":
+    "prefix": "doctype"
+    "body":
+  "Data":
+    "prefix": "data"
+    "body":
+  "Data List":
+    "prefix": "datalist"
+    "body":
+  "Description":
+    "prefix": "dd"
+    "body":
+  "Deleted Text":
+    "prefix": "del"
+    "body":
+  "Details":
+    "prefix": "details"
+    "body":
+  "Definition":
+    "prefix": "dfn"
+    "body":
+  "Description List":
+    "prefix": "dl"
+    "body":
+  "Definition Term":
+    "prefix": "dt"
+    "body":
+  "Div":
+    "prefix": "div"
+    "body":
+  # E
+  "Emphasis":
+    "prefix": "em"
+    "body":
+  "Embed":
+    "prefix": "embed"
+    "body":
+  # F
+  "Favicon":
+    "prefix": "favicon"
+    "body":
+  "Fieldset":
+    "prefix": "fieldset"
+    "body":
+  "Figure Caption":
+    "prefix": "figcaption"
+    "body":
+  "Figure":
+    "prefix": "figure"
+    "body":
+  "Footer":
+    "prefix": "footer"
+    "body":
+  "Form":
+    "prefix": "form"
+    "body":
+  # G
+  # H
+  "Heading 1":
+    "prefix": "h1"
+    "body":
+  "Heading 2":
+    "prefix": "h2"
+    "body":
+  "Heading 3":
+    "prefix": "h3"
+    "body":
+  "Heading 4":
+    "prefix": "h4"
+    "body":
+  "Heading 5":
+    "prefix": "h5"
+    "body":
+  "Heading 6":
+    "prefix": "h6"
+    "body":
+  "Head":
+    "prefix": "head"
+    "body":
+  "Header":
+    "prefix": "header"
+    "body":
+  "Heading Group":
+    "prefix": "hgroup"
+    "body":
+  "Horizontal Rule":
+    "prefix": "hr"
+    "body":
+  "HTML":
+    "prefix": "html"
+    "body":
+  # I
+  "Italic":
+    "prefix": "i"
+    "body":
+  "Inline Frame":
+    "prefix": "iframe"
+    "body":
+  "Image":
+    "prefix": "img"
+    "body":
+  "Input":
+    "prefix": "input"
+    "body":
+  "Import":
+    "prefix": "import"
+    "body":
+  "Inserted Text":
+    "prefix": "ins"
+    "body":
+  # J
+  # K
+  "Keyboard Input":
+    "prefix": "kbd"
+    "body":
+  "Keygen":
+    "prefix": "keygen"
+    "body":
+  # L
+  "Label":
+    "prefix": "label"
+    "body":
+  "Legend":
+    "prefix": "legend"
+    "body":
+  "List Item":
+    "prefix": "li"
+    "body":
+  "Link":
+    "prefix": "link"
+    "body":
+  # M
+  "Main":
+    "prefix": "main"
+    "body":
+  "Map":
+    "prefix": "map"
+    "body":
+  "Mark":
+    "prefix": "mark"
+    "body":
+  "MathML":
+    "prefix": "math"
+    "body":
+  "Menu":
+    "prefix": "menu"
+    "body":
+  "Menu Item":
+    "prefix": "menuitem"
+    "body":
+  "Meter":
+    "prefix": "meter"
+    "body":
+  "Mail Anchor":
+    "prefix": "mailto"
+    "body":
+  "Meta":
+    "prefix": "meta"
+    "body":
+  # N
+  "Navigation":
+    "prefix": "nav"
+    "body":
+  "Noscript":
+    "prefix": "noscript"
+    "body":
+  # O
+  "Object":
+    "prefix": "object"
+    "body":
+  "Ordered List":
+    "prefix": "ol"
+    "body":
+  "Option Group":
+    "prefix": "optgroup"
+    "body":
+  "Option":
+    "prefix": "option"
+    "body":
+  "Output":
+    "prefix": "output"
+    "body":
+  # P
+  "Paragraph":
+    "prefix": "p"
+    "body":
+  "Parameter":
+    "prefix": "param"
+    "body":
+  "Picture":
+    "prefix": "picture"
+    "body":
+  "Preformatted Text":
+    "prefix": "pre"
+    "body":
+  "Progress":
+    "prefix": "progress"
+    "body":
+  # Q
+  "Quote":
+    "prefix": "q"
+    "body":
+  # R
+  "Ruby Base":
+    "prefix": "rb"
+    "body":
+  "Ruby Parenthesis":
+    "prefix": "rp"
+    "body":
+  "Ruby Pronunciation":
+    "prefix": "rt"
+    "body":
+  "Ruby Text Container":
+    "prefix": "rtc"
+    "body":
+  "Ruby Annotation":
+    "prefix": "ruby"
+    "body":
+  # S
+  "Strikethrough":
+    "prefix": "s"
+    "body":
+  "Sample Output":
+    "prefix": "samp"
+    "body":
+  "Script":
+    "prefix": "script"
+    "body":
+  "Script With External Source":
+    "prefix": "scriptsrc"
+    "body":
+  "Section":
+    "prefix": "section"
+    "body":
+  "Select":
+    "prefix": "select"
+    "body":
+  "Small":
+    "prefix": "small"
+    "body":
+  "Source":
+    "prefix": "source"
+    "body":
+  "Span":
+    "prefix": "span"
+    "body":
+  "Strong":
+    "prefix": "strong"
+    "body":
+  "Style":
+    "prefix": "style"
+    "body":
+  "Subscript":
+    "prefix": "sub"
+    "body":
+  "Summary":
+    "prefix": "summary"
+    "body":
+  "Superscript":
+    "prefix": "sup"
+    "body":
+  "SVG":
+    "prefix": "svg"
+    "body":
+  # T
+  "Table":
+    "prefix": "table"
+    "body":
+  "Table Body":
+    "prefix": "tbody"
+    "body":
+  "Table Cell":
+    "prefix": "td"
+    "body":
+  "Template":
+    "prefix": "template"
+    "body":
+  "Text Area":
+    "prefix": "textarea"
+    "body":
+  "Table Foot":
+    "prefix": "tfoot"
+    "body":
+  "Table Header Cell":
+    "prefix": "th"
+    "body":
+  "Table Head":
+    "prefix": "thead"
+    "body":
+  "Time":
+    "prefix": "time"
+    "body":
+  "Title":
+    "prefix": "title"
+    "body":
+  "Table Row":
+    "prefix": "tr"
+    "body":
+  "Track":
+    "prefix": "track"
+    "body":
+  # U
+  "Underline":
+    "prefix": "u"
+    "body":
+  "Unordered List":
+    "prefix": "ul"
+    "body":
+  # V
+  "Variable":
+    "prefix": "var"
+    "body":
+  "Video":
+    "prefix": "video"
+    "body":
+  # W
+  "Word Break Opportunity":
+    "prefix": "wbr"
+    "body":
+
+# These null out the snippets so the snippets are not available when in a tag or
+# in embedded contexts like <script> and <style>
+".text.html .meta.tag, .text.html .embedded":
+  # A
+  "Anchor":
+    "prefix": "a"
+  "Abbreviation":
+    "prefix": "abbr"
+  "Address":
+    "prefix": "address"
+  "Area":
+    "prefix": "area"
+  "Article":
+    "prefix": "article"
+  "Aside":
+    "prefix": "aside"
+  "Audio":
+    "prefix": "audio"
+  # B
+  "Body":
+    "prefix": "body"
+  "Bold":
+    "prefix": "b"
+  "Base":
+    "prefix": "base"
+  "Bi-Directional Isolation":
+    "prefix": "bdi"
+  "Bi-Directional Override":
+    "prefix": "bdo"
+  "Blockquote":
+    "prefix": "blockquote"
+  "Line Breaker":
+    "prefix": "br"
+  "Button":
+    "prefix": "button"
+  # C
+  "Canvas":
+    "prefix": "canvas"
+  "Caption":
+    "prefix": "caption"
+  "Citation":
+    "prefix": "cite"
+  "Code":
+    "prefix": "code"
+  "Column":
+    "prefix": "col"
+  "Column Group":
+    "prefix": "colgroup"
+  "Content":
+    "prefix": "content"
+  "Comment":
+    "prefix": "--"
+  # D
+  "HTML — 5":
+    "prefix": "doctype"
+  "Data":
+    "prefix": "data"
+  "Data List":
+    "prefix": "datalist"
+  "Description":
+    "prefix": "dd"
+  "Deleted Text":
+    "prefix": "del"
+  "Details":
+    "prefix": "details"
+  "Definition":
+    "prefix": "dfn"
+  "Description List":
+    "prefix": "dl"
+  "Definition Term":
+    "prefix": "dt"
+  "Div":
+    "prefix": "div"
+  # E
+  "Emphasis":
+    "prefix": "em"
+  "Embed":
+    "prefix": "embed"
+  # F
+  "Favicon":
+    "prefix": "favicon"
+  "Fieldset":
+    "prefix": "fieldset"
+  "Figure Caption":
+    "prefix": "figcaption"
+  "Figure":
+    "prefix": "figure"
+  "Footer":
+    "prefix": "footer"
+  "Form":
+    "prefix": "form"
+  # G
+  # H
+  "Heading 1":
+    "prefix": "h1"
+  "Heading 2":
+    "prefix": "h2"
+  "Heading 3":
+    "prefix": "h3"
+  "Heading 4":
+    "prefix": "h4"
+  "Heading 5":
+    "prefix": "h5"
+  "Heading 6":
+    "prefix": "h6"
+  "Head":
+    "prefix": "head"
+  "Header":
+    "prefix": "header"
+  "Heading Group":
+    "prefix": "hgroup"
+  "Horizontal Rule":
+    "prefix": "hr"
+  "HTML":
+    "prefix": "html"
+  # I
+  "Italic":
+    "prefix": "i"
+  "Inline Frame":
+    "prefix": "iframe"
+  "Input":
+    "prefix": "input"
+  "Image":
+    "prefix": "img"
+  "Import":
+    "prefix": "import"
+  "Inserted Text":
+    "prefix": "ins"
+  # J
+  # K
+  "Keyboard Input":
+    "prefix": "kbd"
+  "Keygen":
+    "prefix": "keygen"
+  # L
+  "Label":
+    "prefix": "label"
+  "Legend":
+    "prefix": "legend"
+  "List Item":
+    "prefix": "li"
+  "Link":
+    "prefix": "link"
+  # M
+  "Main":
+    "prefix": "main"
+  "Map":
+    "prefix": "map"
+  "Mark":
+    "prefix": "mark"
+  "MathML":
+    "prefix": "math"
+  "Menu":
+    "prefix": "menu"
+  "Menu Item":
+    "prefix": "menuitem"
+  "Meter":
+    "prefix": "meter"
+  "Mail Anchor":
+    "prefix": "mailto"
+  "Meta":
+    "prefix": "meta"
+  # N
+  "Navigation":
+    "prefix": "nav"
+  "Noscript":
+    "prefix": "noscript"
+  # O
+  "Object":
+    "prefix": "object"
+  "Ordered List":
+    "prefix": "ol"
+  "Option Group":
+    "prefix": "optgroup"
+  "Option":
+    "prefix": "option"
+  "Output":
+    "prefix": "output"
+  # P
+  "Paragraph":
+    "prefix": "p"
+  "Parameter":
+    "prefix": "param"
+  "Picture":
+    "prefix": "picture"
+  "Preformatted Text":
+    "prefix": "pre"
+  "Progress":
+    "prefix": "progress"
+  # Q
+  "Quote":
+    "prefix": "q"
+  # R
+  "Ruby Base":
+    "prefix": "rb"
+  "Ruby Parenthesis":
+    "prefix": "rp"
+  "Ruby Pronunciation":
+    "prefix": "rt"
+  "Ruby Text Container":
+    "prefix": "rtc"
+  "Ruby Annotation":
+    "prefix": "ruby"
+  # S
+  "Strikethrough":
+    "prefix": "s"
+  "Sample Output":
+    "prefix": "samp"
+  "Script":
+    "prefix": "script"
+  "Script With External Source":
+    "prefix": "scriptsrc"
+  "Section":
+    "prefix": "section"
+  "Select":
+    "prefix": "select"
+  "Small":
+    "prefix": "small"
+  "Source":
+    "prefix": "source"
+  "Span":
+    "prefix": "span"
+  "Strong":
+    "prefix": "strong"
+  "Style":
+    "prefix": "style"
+  "Subscript":
+    "prefix": "sub"
+  "Summary":
+    "prefix": "summary"
+  "Superscript":
+    "prefix": "sup"
+  "SVG":
+    "prefix": "svg"
+  # T
+  "Table":
+    "prefix": "table"
+  "Table Body":
+    "prefix": "tbody"
+  "Table Cell":
+    "prefix": "td"
+  "Template":
+    "prefix": "template"
+  "Text Area":
+    "prefix": "textarea"
+  "Table Foot":
+    "prefix": "tfoot"
+  "Table Header Cell":
+    "prefix": "th"
+  "Table Head":
+    "prefix": "thead"
+  "Time":
+    "prefix": "time"
+  "Title":
+    "prefix": "title"
+  "Table Row":
+    "prefix": "tr"
+  "Track":
+    "prefix": "track"
+  # U
+  "Underline":
+    "prefix": "u"
+  "Unordered List":
+    "prefix": "ul"
+  # V
+  "Variable":
+    "prefix": "var"
+  "Video":
+    "prefix": "video"
+  # W
+  "Word Break Opportunity":
+    "prefix": "wbr"
